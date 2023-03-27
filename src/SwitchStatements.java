@@ -1,8 +1,9 @@
 public class SwitchStatements {
     public static void main(String[] args) {
 
-        printDayOfWeek(-7);
-        printDayOfWeekEnhanced(2);
+//        printDayOfWeek(-7);
+//        printDayOfWeekEnhanced(2);
+        printNumberInWord(4);
     }
     public static void printDayOfWeek(int dayOfWeek) {
         switch(dayOfWeek) {
@@ -45,6 +46,23 @@ public class SwitchStatements {
         } ;
 
         System.out.println(day + " stands for " + dayOfWeek);
+    }
+    public static void printNumberInWord(int number) {
+        String word;
+        switch (number) {
+            case 0 -> word = "ZERO";
+            case 1 -> word = "ONE";
+            case 2 -> word = "TWO";
+            case 3 -> word = "THREE";
+            case 4 -> word = "FOUR";
+            case 5 -> word = "FIVE";
+            case 6 -> word = "SIX";
+            case 7 -> word = "SEVEN";
+            case 8 -> word = "EIGHT";
+            case 9 -> word = "NINE";
+            default -> word = "OTHER";
+        }
+        System.out.println(word);
     }
 
 }
