@@ -17,9 +17,6 @@ public class WhileLoopChallenge {
     }
 
     public static boolean IsEvenNumber(int number) {
-        if (number % 2 == 0) {
-            return true;
-        }
-        return false;
+        return number % 2 == 0;
     }
 }
